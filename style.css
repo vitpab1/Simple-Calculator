@@ -1,0 +1,82 @@
+.container {
+  background: whitesmoke;
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+    border: 1px solid black;
+}
+
+.display {
+  width: 100%;
+  background-color: #202020;
+  height: 80px;
+  max-width: 400px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 78px;
+  color: #ffffff;
+}
+
+body {
+  background-color: rgb(182, 137, 4);
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+.btn-clear {
+  flex-basis: 37.5%;
+}
+
+button {
+  flex-basis: 25%;
+  font-size: 1.5em;
+  height: 80px;
+  border: 1px solid rgb(59, 58, 58);
+  outline: none;
+}
+
+.btn-number {
+  background-color: #d5d6d8;
+}
+
+.btn-operator {
+  background-color: #f98c11;
+  color: #ffffff;
+}
+
+.btn-equals {
+  background-color: #2ec973;
+  flex-basis: 50%;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.btn-clear {
+  background-color: #cacbcd;
+  filter: brightness(100%);
+
+}
+
+button:hover{
+  filter: brightness(90%);
+
+}
+button:active{
+  filter: brightness(80%);
+
+}
+@media only screen and (max-width: 500px) {
+
+  .buttons{
+    max-width: 95vw;
+    max-height: 95vw;
+  }
+}
+
